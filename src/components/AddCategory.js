@@ -21,11 +21,15 @@ export const AddCategory = ({ setCategories }) => {
     return (
         <>
             <form onSubmit={ handleSubmit }>
-                <input 
-                    type="text"
-                    value= { inputValue }
-                    onChange= { handleInputChange }
-                />
+                <div className="form-group">
+                    <input 
+                        type="text"
+                        className="form-control"
+                        placeholder="Ingrese el Gif a buscar"
+                        value= { inputValue }
+                        onChange= { handleInputChange }
+                    />
+                </div>
             </form>
         </>
     )
